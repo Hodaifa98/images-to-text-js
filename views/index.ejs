@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <title>OCR</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Convert Images to Text</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div id="drop-area">
+                <p>Drag an image here to analyse!</p>
+                <input type="file" name="textImage" id="fileElem" accept="image/jpeg, image/jpg, image/png"  onchange="handleFiles(this.files)">
+                <label class="button" for="fileElem">Select a file</label>
+                <div id="gallery"></div>
+            </div>
+            <button type="submit" id="convertBtn">Convert</button>
+            <div>
+                <label id="waitLabel">Please wait for the download...</label>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>

@@ -1,0 +1,102 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#container h1, #container form {
+    margin: 0 auto;
+}
+
+#container h1 {
+    font-size: 5vw;
+    color: #ddedee;
+}
+
+#convertBtn {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 2.5vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #42cece;
+}
+
+#convertBtn:hover {
+    background: #42cece;
+    color: black;
+}
+
+/*File Drag and Drop container*/
+.note {
+    width: 500px;
+    margin: 50px auto;
+    font-size: 1.1em;
+    color: #333;
+    text-align: justify;
+}
+
+#drop-area {
+    border: 2px dashed #00ADB5;
+    border-radius: 20px;
+    width: 50vw;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#drop-area.highlight, .button.highlight {
+    border-color: #00b56a;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    margin-top: 10px;
+}
+
+#gallery img {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #00ADB5;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #35b1b8;
+    color: black;
+}
+
+#fileElem {
+    display: none;
+}
+/**/
+
+#waitLabel {
+    border: 1.5px solid #00ADB5;
+    border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+}
